@@ -1,0 +1,12 @@
+[Interface]
+Address = 10.0.101.2
+ListenPort = 51900
+PrivateKey = (Private-Key)
+
+[Peer]
+PublicKey = (Public-Key-Of-Peer)
+AllowedIPs = 10.0.101.1/32, 172.31.61.0/20
+#The 172 IP is the private subnet of the Wireguard network
+Endpoint = 107.23.9.111:51900
+#Endpoint IP is the public IP of the Wireguard box
+PersistentKeepalive = 25
